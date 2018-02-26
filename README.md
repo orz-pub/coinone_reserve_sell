@@ -10,7 +10,7 @@
 
 
 # 필요한 것
-  - [python3.6 (64bit)](https://www.python.org/downloads/)
+  - [Python3.6 (64bit)](https://www.python.org/downloads/)
   - [코인원 API V2 키](https://coinone.co.kr/developer/app/)
     - API 버전은 **V2** 선택
     - **'거래소 조회'** 와 **'거래소 주문'** 의 권한 선택
