@@ -1,0 +1,20 @@
+{
+	"access_token": "your_coinone_access_token",
+	"secret_key": "your_coinone_secret_key",
+	"reservation": [{
+			"currency": "iota",
+			"sell_threshold": 1000,
+			"sell_margin_price": -5000,
+			"sell_quantity": 1.5,
+			"sell_wait_sec": 60
+		}
+	],
+	"log_level": "INFO",
+	"log_formatter": "[%(levelname)s|%(filename)s:%(lineno)s] %(asctime)s > %(message)s",
+	"log_file": false,
+	"refresh_sec": 30,
+	"ticker_url": "https://api.coinone.co.kr/ticker?currency=",
+	"sell_url": "https://api.coinone.co.kr/v2/order/limit_sell/",
+	"cancel_order_url": "https://api.coinone.co.kr/v2/order/cancel/",
+	"complete_orders_url": "https://api.coinone.co.kr/v2/order/complete_orders/"
+}
