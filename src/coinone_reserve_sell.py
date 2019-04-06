@@ -67,7 +67,7 @@ def work_each(config, reservation, logger):
         logger.error("fail get ticker! - {}".format(last_price))
         return False
 
-    if float(reservation['sell_threshold']) <= last_price:
+    if float(reservation['sell_threshold']) >= last_price:
         if 'test_mode' in config:
             if config['test_mode'] and 0 <= float(reservation['sell_margin_price']):
                 raise Exception('test mode cannot set positivie sell_margin_price!')
